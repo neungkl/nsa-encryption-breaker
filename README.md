@@ -4,7 +4,7 @@ This is the breaker for NSA encryption puzzle.
 
 I found a task from Facebook page name [สอนแฮกเว็บแบบแมวๆ](https://www.facebook.com/longhackz/photos/a.1560357644219017.1073741828.1559669844287797/1753068201614626/) (It's a really good page :D)
 
-The purpose of the task.
+The objective of the task.
 
 1. Read the encryption code (look the code below)
 2. You got the long hash string without know the exactly key and plain text.
