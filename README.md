@@ -37,7 +37,7 @@ function nsaEncrypt($key, $plainText)
 
 ## Solution
 
-I written a code with Python. Using some binary search algorithm and mathmatic method.
+I written a code with Python. Using some binary search algorithm and mathmatic method.<br>
 You can ask me directly if you need some more information.
 
 You can try it by clone this project and run with `python decription.py` (Python 2.7 require [also supported 3.5])
