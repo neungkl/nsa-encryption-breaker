@@ -26,11 +26,11 @@ def factorize(hash) :
             list.append(2)
             hash = hash // 2
         else :
-            i = 3
+            i = max(3, list[-1])
             while hash % i != 0 :
                 if i % 2000000 == 0 :
-                    print ("Calculating...")
-                if i > 10000000 :
+                    print ("Factors calculating...")
+                if i > 20000000 :
                     should_pause = 1
                     break
                 i = i + 1
@@ -86,7 +86,7 @@ def find_best_plain_text(key, lower_key_str, upper_key_str, hash) :
 if __name__ == "__main__" :
 
     print ("================================================")
-    print ("  NSA Encryption break by Kosate Limpongsa")
+    print ("  NSA Encryption break")
     print ("================================================")
 
     hash = 434384569820012709749978085023147407174684824178941182826833799495931410023794845922767533429746537016995520506439457550763575993604402054742042654701475990703513534158579743446096171193503041071008550601683001839024513922875537448251544812606790879783442587227277601837740236112564627038091170167413493638174350319534049389495771259593223970367601200671312435588244337256711215093040169407379877379400242759675821842258110296156050808143302683071999772732555638568114446076107646435540182476596386155629693774180289540430199704239923354089531930534807431109632462125230336414045829798557815327441670222304200
@@ -107,6 +107,12 @@ if __name__ == "__main__" :
     # lower_key = 9060764011643293511
     upper_key = find_near_key(hash, sample_lower) + 1
     # upper_key = 9276727210565429884
+
+    print ("Calculate bound complete")
+    print ("")
+    print ("Lower bound key: " + str(lower_key))
+    print ("Upper bound key: " + str(upper_key))
+    print ("")
 
     factor = factorize(hash)
     print
