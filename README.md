@@ -53,4 +53,6 @@ Here a short description of what I do.
 6. Use a number from (6) for find a plain text. (Using binary search again)
 7. DONE
 
+## Usage
+
 You can try it by clone this project and run with `python decription.py` (Python 2.7 require [also supported 3.5])
